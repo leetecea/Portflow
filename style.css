@@ -221,7 +221,7 @@ header button {
   }
 
   header h2 {
-    width: 50%;
+    width: 40%;
     top: 80px;
     left: 30px;
     font-size: 1.8em;
@@ -256,23 +256,20 @@ header button {
   }
 
   header .box-bottom img {
-    width: 1600px;
-    position: relative;
-    right: 980px;
-    height: 640px;
-    overflow: hidden;
+    width: 460px;
   }
 
   header h2 {
-    top: 50px;
+    width: 20%;
+    top: 70px;
     left: 30px;
-    font-size: 1.1em;
+    font-size: 1.6em;
   }
 
   header button {
     top: 170px;
     left: 30px;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -297,5 +294,29 @@ header button {
   h1 {
     font-size: 1.1em;
     right: 65px;
+  }
+
+  header .box-bottom img {
+    display: none;
+  }
+
+  header .box-bottom {
+    background-image: url(img/laranja-mobile.png);
+    background-size: 100%;
+    width: 100%;
+    height: 640px;
+  }
+
+  header h2 {
+    width: 20%;
+    top: 430px;
+    left: 38px;
+    font-size: 3.1em;
+  }
+
+  header button {
+    top: 630px;
+    left: 38px;
+    font-size: 1.1em;
   }
 }
