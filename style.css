@@ -79,6 +79,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
   width: 90%;
   margin-top: 90px;
 }
@@ -100,6 +101,33 @@ main .box-line3 {
   margin-top: 17px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 126px;
+  margin-top: 86px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+footer .copyright p {
+  width: 60%;
+  margin-left: 50px;
+}
+
+/*@medias*/
+
 @media (max-width: 1800px) {
   main {
     width: 100%;
@@ -107,7 +135,7 @@ main .box-line3 {
 
   main .box-line1 {
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     height: 800px;
     margin: auto;
     margin-bottom: 40px;
@@ -115,7 +143,7 @@ main .box-line3 {
 
   main .box-line2 {
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     height: 800px;
     margin: auto;
     margin-bottom: 40px;
@@ -123,7 +151,7 @@ main .box-line3 {
 
   main .box-line3 {
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     height: 800px;
     margin: auto;
   }
