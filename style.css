@@ -47,8 +47,12 @@ header .list-menu a:hover {
   font-weight: 800;
 }
 
-header .box-bottom img {
+header .img-desktop img {
   width: 100%;
+}
+
+header .img-mobile img {
+  display: none;
 }
 
 header h2 {
@@ -71,7 +75,63 @@ header button {
   color: white;
 }
 
-/*@medias*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-top: 90px;
+}
+
+main .box-line1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .box-line2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 17px;
+}
+
+main .box-line3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 17px;
+}
+
+@media (max-width: 1800px) {
+  main {
+    width: 100%;
+  }
+
+  main .box-line1 {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  main .box-line2 {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  main .box-line3 {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+  }
+
+  main figure {
+    padding-bottom: 17px;
+  }
+}
 
 @media (max-width: 1550px) {
   header h2 {
@@ -91,6 +151,7 @@ header button {
   header .box-top {
     height: 100px;
   }
+
   header .list-menu {
     width: 40%;
     font-size: 0.9em;
@@ -111,16 +172,36 @@ header button {
     left: 50px;
     font-size: 1.4em;
   }
+
+  main .box-line1 {
+    flex-direction: row;
+    width: 60%;
+    height: initial;
+    margin-bottom: initial;
+  }
+
+  main .box-line2 {
+    flex-direction: row;
+    width: 60%;
+    height: initial;
+    margin-bottom: initial;
+  }
+
+  main .box-line3 {
+    flex-direction: row;
+    width: 60%;
+    height: initial;
+  }
 }
 
 @media (max-width: 960px) {
+  h1 {
+    font-size: 2em;
+  }
+
   header .list-menu {
     width: 50%;
     font-size: 0.88em;
-  }
-
-  h1 {
-    font-size: 2em;
   }
 
   header h2 {
@@ -142,13 +223,13 @@ header button {
     height: 90px;
   }
 
+  h1 {
+    font-size: 1.8em;
+  }
+
   header .list-menu {
     width: 55%;
     font-size: 0.8em;
-  }
-
-  h1 {
-    font-size: 1.8em;
   }
 
   header h2 {
@@ -163,6 +244,14 @@ header button {
     left: 35px;
     font-size: 1em;
   }
+
+  main {
+    margin-top: 50px;
+  }
+
+  main figure img {
+    width: 300px;
+  }
 }
 
 @media (max-width: 628px) {
@@ -170,13 +259,13 @@ header button {
     height: 80px;
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   header .list-menu {
     width: 70%;
     font-size: 0.8em;
-  }
-
-  h1 {
-    font-size: 1.5em;
   }
 
   header h2 {
@@ -194,10 +283,6 @@ header button {
 }
 
 @media (max-width: 570px) {
-  header .box-top {
-    height: 50px;
-  }
-
   header .menu {
     display: flex;
     justify-content: center;
@@ -209,6 +294,10 @@ header button {
   header .menu-hamburguer {
     width: 25px;
     height: 20px;
+  }
+
+  header .box-top {
+    height: 50px;
   }
 
   h1 {
@@ -234,10 +323,7 @@ header button {
   }
 }
 
-@media (max-width: 460px) {
-  header .box-top {
-    height: 40px;
-  }
+@media (max-width: 450px) {
   header .menu {
     display: flex;
     justify-content: center;
@@ -251,33 +337,40 @@ header button {
     height: 18px;
   }
 
+  header .box-top {
+    height: 40px;
+  }
+
   h1 {
     font-size: 1.6em;
   }
 
-  header .box-bottom img {
-    width: 460px;
+  header .img-desktop img {
+    display: none;
+  }
+
+  header .img-mobile img {
+    display: inline;
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
   }
 
   header h2 {
     width: 20%;
-    top: 70px;
-    left: 30px;
-    font-size: 1.6em;
+    top: 450px;
+    left: 38px;
+    font-size: 3.1em;
   }
 
   header button {
-    top: 170px;
-    left: 30px;
-    font-size: 0.8em;
+    top: 650px;
+    left: 38px;
+    font-size: 1.1em;
   }
 }
 
 @media (max-width: 375px) {
-  header .box-top {
-    height: 30px;
-  }
-
   header .menu {
     display: flex;
     justify-content: center;
@@ -291,20 +384,13 @@ header button {
     height: 12px;
   }
 
+  header .box-top {
+    height: 30px;
+  }
+
   h1 {
     font-size: 1.1em;
     right: 65px;
-  }
-
-  header .box-bottom img {
-    display: none;
-  }
-
-  header .box-bottom {
-    background-image: url(img/laranja-mobile.png);
-    background-size: 100%;
-    width: 100%;
-    height: 640px;
   }
 
   header h2 {
